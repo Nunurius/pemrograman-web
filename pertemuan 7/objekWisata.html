@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images.png" type="image/x-icon" />
+<style>
+body {
+    margin: 3% 8%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.hidden-row {
+    display: none;
+    background-color: #f9f9f9;
+}
+.image-preview {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.image-preview img {
+    border-radius: 15px;
+}
+.image-preview img:hover {
+    transition: all ease-in-out;
+    transform: scale(1.1);
+}
+.copyright {
+    text-align: right;
+    margin-top: 5%;
+}
+.copyright a {
+    text-decoration: none;
+}
+.backgroud {
+    text-align: right;
+}
+</style>
+<title>Visnu Rahman</title>
+</head>
+<body>
+<div style="display: flex;">
+<img src="IMG_20230510_054616.jpg" width="90px">
+<h4 style="border: #fc0202; width: auto;">
+&nbsp;&nbsp;&nbsp;Visnu Rahman &nbsp;(211011401457)<br>
+&nbsp;&nbsp;&nbsp;Teknik Informatika <br>
+&nbsp;&nbsp;&nbsp;05TPLE008
+</h4>
+</div>
+<h1 style="font-size:xx-large; font-family: Arial, Helvetica, sansserif;">Objek Wisata Indonesia</h1>
+<table>
+<tr style="font-family:'Franklin Gothic Medium', 'Arial Narrow',
+Arial, sans-serif;">
+<th>Nama Objek Wisata</th>
+<th>Lokasi</th>
+<th>Deskripsi</th>
+<th colspan="2">Detail</th>
+</tr>
+<tr class="show-details">
+<td>Banda Neira</td>
+<td>Kepulauan Banda</td>
+<td>Pulau Banda Neira ini terkenal dengan keindahan alamnya yg masih alami.</td>
+<td><button
+onclick="showDetails('bandaDetails')">SHOW</button></td>
+</tr>
+<tr class="hidden-row" id="bandaDetails">
+<td colspan="6">
+<strong>Detail Banda Neira:</strong><br>
+<p>Banda Naira adalah salah satu pulau di Kepulauan Banda, dan merupakan pusat administratif Kecamatan Banda,
+Kabupaten Maluku Tengah, Maluku, Indonesia. Secara administratif, Banda Neira terbagi dalam 12 desa.
+Banda Neira pernah menjadi pusat perdagangan pala dan fuli (bunga pala) dunia, karena Kep. Banda adalah satu-satunya
+sumber rempah-rempah yang bernilai tinggi itu hingga pertengahan abad ke-19. Kota modernnya didirikan oleh anggota VOC </p>
+<p class="image-preview">
+<img src="banda neira.jpg" alt="pantai" width="250" />
+<img src="banda3.jpg" alt="alam banda neira" width="250" />
+<img src="banda4.jpg" alt="gunung" width="250" />
+<img src="banda5.jpg" alt="pemandangan"
+width="250" />
+</p>
+<p>Banda Neira menjadi perbincangan warganet lantaran keindahan alamnya yang memukau. Panorama alam laut biru berpadu dengan gugusan pulau dan
+gunung yang indah seakan menarik siapapun untuk berkunjung. Selain pemandangan gunung, pantai dan pulau, panorama bawah lautnya juga tak kalah menarik.
+Bahkan wisata bawah laut Banda Neira disebut-sebut merupakan salah satu spot snorkeling dan diving terbaik di dunia. Terdapat lebih dari 30 spot
+snorkeling yang menarik di kawasan ini.</p>
+<p>Gunung Api Banda bisa dikatakan sebagai salah satu ikon wisata utama dari Banda Neira. Pengunjung bisa mendaki ke puncak gunung ini untuk melihat
+pemandangan alam yang yang menakjubkan dari puncak ketinggian. Salah satu dari gugusan Kepulauan Banda yang menarik untuk dikunjungi saat berwisata 
+ke Banda Neira adalah pulau Nailaka. Pulau tak berpenghuni ini memiliki kecantikan yang sungguh menakjubkan.
+Tak berlebihan rasanya jika pulau kecil ini disebut sebagai sekeping surga yang jatuh ke Bumi. Hamparan pantai pasir putih yang berpadu dengan jernihnya 
+air laut akan memanjakan mata setiap pengunjung.</p>
+<button onclick="hideDetails('bandaDetails')">Tutup</button>
+</td>
+</tr>
+<tr class="show-details">
+<td>Gunung Rinjani  </td>
+<td>Pulau Lombok</td>
+<td>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok,
+Nusa Tenggara Barat. Gunung yang merupakan gunung berapi kedua tertinggi di Indonesia</td>
+<td><button
+onclick="showDetails('RinjaniDetails')">SHOW</button></td>
+</tr>
+<tr class="hidden-row" id="RinjaniDetails">
+<td colspan="6">
+<strong>Detail Gunung Rinjani :</strong><br>
+<p> Di sebelah barat kerucut Rinjani terdapat kaldera dengan luas sekitar 3.500 m × 4.800 m, memanjang kearah timur dan barat. Di kaldera ini terdapat
+Segara Anak (segara= laut, danau) seluas 11.000.000 m persegi dengan kedalaman 230 m. Air yang mengalir dari danau ini membentuk air terjun yang sangat
+indah, mengalir melewati jurang yang curam. Di Segara Anak banyak terdapat ikan mas dan mujair sehingga sering digunakan untuk memancing. Bagian selatan
+danau ini disebut dengan Segara Endut.</p>
+<p class="image-preview">
+<img src="rinjani.jpg" alt="pemandangan alam" width="250" />
+<img src="rinjani2.jpg" alt="jalur pendakian" width="250" />
+<img src="rinjani3.jpg" alt="gunung rinjani" width="250" />
+<img src="rinjani4.jpg" alt="sunrise camp" width="250"
+/>
+</p>
+<p>Pesona yang dimiliki oleh Gunung Rinjani nyaris sempurna sehingga tidak diragukan lagi jika Rinjani menjadi daya tarik yang mampu memikat minat para
+wisatawan mancanegara maupun nusantara untuk mendakinya. Dan mendaki Gunung Rinjani tentunya akan menjadi kenangan dan pengalaman hidup yang tidak akan
+terlupakan.Gunung Rinjani memiliki kawah dengan lebar sekitar 10 km dan terdapat danau kawah yang disebut danau Segara Anak dengan kedalaman sekitar 230 m.
+Dengan warna airnya yang membiru bagaikan anak lautan, air yang mengalir dari danau ini membentuk air terjun yang sangat indah dan mengalir melewati jurang
+yang curam. </p>
+<p>Hutan dan semak belukar seluas 76.000 hektar merupakan pemandangan yang asri bagi Gunung Rinjani </p>
+<button onclick="hideDetails('RinjaniDetails')">Tutup</button>
+</td>
+</tr>
+</table>
+<script>
+function showDetails(id) {
+    document.getElementById(id).style.display = 'table-row';
+}
+function hideDetails(id) {
+    document.getElementById(id).style.display = 'none';
+}
+</script>
