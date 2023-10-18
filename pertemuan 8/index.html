@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/v4.6.2/bootstrap.min.css" />
+
+    <title>Visnu Rahman</title>
+  </head>
+  <body style="background-color: #b692e6; min-height: 100vh;" class="text-white">
+    <div class="container pt-5 pb-3">
+      <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="col-md-7">
+          <div class="card">
+            <div class="card-body text-dark">
+              <form action="" method="post">
+                <h3 class="text-primary text-center mb-4">Free Registration</h3>
+
+                <div class="form-group row mb-3">
+                  <label for="fullname" class="col-sm-3 col-form-label">Nama :</label>
+                  <div class="col-sm">
+                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="" value="" />
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group row mb-3">
+                  <label for="tgl_lahir_day" class="col-sm-3 col-form-label">Tgl Lahir :</label>
+                  <div class="col-sm">
+                    <input type="number" class="form-control" id="tgl_lahir_day" name="tgl_lahir_day" placeholder="DD" value="" oninput="maxLengthCheck(this)" maxlength="2" />
+                  </div>
+                  
+                  <span>/</span>
+
+                  <div class="col-sm">
+                    <input type="number" class="form-control" id="tgl_lahir_month" name="tgl_lahir_month" placeholder="MM" value="" oninput="maxLengthCheck(this)" maxlength="2" />
+                  </div>
+
+                  <span>/</span>
+
+                  <div class="col-sm">
+                    <input type="number" class="form-control" id="tgl_lahir_year" name="tgl_lahir_year" placeholder="YYYY" value="" oninput="maxLengthCheck(this)" maxlength="4" />
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group row mb-3">
+                  <label for="alamat" class="col-sm-3 col-form-label text-dark">Alamat :</label>
+                  <div class="col-sm">
+                    <textarea class="form-control" name="alamat" id="alamat" rows="3" placeholder=""></textarea>
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group row mb-3">
+                  <label for="pekerjaan" class="col-sm-3 col-form-label text-dark">Pekerjaan :</label>
+                  <div class="col-sm">
+                    <select name="pekerjaan" id="pekerjaan" class="form-control">
+                      <option value="0">-- Pilih Pekerjaan --</option>
+                      <option value="1">Petani</option>
+                      <option value="2">Nelayan</option>
+                      <option value="3">Pedagang</option>
+                      <option value="4">TNI</option>
+                      <option value="5">ASN</option>
+                      <option value="6">Karyawan Swasta</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group row mb-3">
+                  <label for="jns_kelamin" class="col-sm-3 col-form-label text-dark">Jenis Kelamin :</label>
+                  <div class="col-sm">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="jns_kelamin_1" name="jns_kelamin" class="custom-control-input" />
+                      <label class="custom-control-label" for="jns_kelamin_1">Pria</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="jns_kelamin_2" name="jns_kelamin" class="custom-control-input" />
+                      <label class="custom-control-label" for="jns_kelamin_2">Wanita</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="form-group row mb-3">
+                  <label for="hobby" class="col-sm-3 col-form-label text-dark">Hobby :</label>
+                  <div class="col-sm">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hobby_1" name="hobby" value="1" />
+                      <label class="custom-control-label" for="hobby_1">Reading</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hobby_2" name="hobby" value="2" />
+                      <label class="custom-control-label" for="hobby_2">Sport</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hobby_3" name="hobby" value="3" />
+                      <label class="custom-control-label" for="hobby_3">Singing</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="hobby_4" name="hobby" value="4" />
+                      <label class="custom-control-label" for="hobby_4">Traveling</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- form-group -->
+
+                <div class="button-action text-right">
+                  <button type="submit" class="btn btn-sm btn-primary">Kirim</button>
+                  <button type="reset" class="btn btn-sm btn-secondary">Cancel</button>
+                </div>
+              </form>
+            </div>
+            <!-- card-body -->
+          </div>
+        </div>
+        <!-- col-md-x -->
+      </div>
+      <!-- row -->
+
+      <div class="row justify-content-end mt-5">
+        <div class="col text-right">
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/jquery/v3.5.1/jquery.min.js"></script>
+    <script src="../assets/bootstrap/v4.6.2/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function maxLengthCheck(object) {
+        if (object.value.length > object.maxLength) {
+          object.value = object.value.slice(0, object.maxLength);
+        }
+      }
+    </script>
+  </body>
+</html>
