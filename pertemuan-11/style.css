@@ -1,0 +1,27 @@
+*,
+body {
+    background-color: aquamarine;
+}
+
+body h1 {
+    text-align: center;
+    color: blueviolet;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(5, 135, 250);
+    text-shadow: 3px, 3px, 5px #000;
+}
+.iframe-tengah {
+    display: flex;
+    justify-content:  center;
+}
+body h2 {
+    text-align: end;
+    color: rgb(247, 139, 8);
+}
+.Paragraf1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}

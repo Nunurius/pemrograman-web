@@ -1,0 +1,85 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0b1116;
+  color: rgb(221, 54, 54);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 5px;
+  padding-left: 1rem;
+  padding-top: 1px;
+}
+
+.nama {
+  font-family: "Arial";
+  font-size: x-large;
+}
+
+.kampus {
+  font-size: small;
+  font-family: "calibri";
+}
+
+#logo {
+  font-size: 22px;
+  display: flex;
+  padding-right: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #d48105;
+  text-decoration: double;
+}
+
+#content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Tentang {
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+}
+
+.utama {
+  margin-bottom: 40px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
